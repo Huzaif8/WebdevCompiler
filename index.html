@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized for Android</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Prevent overflow */
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: calc(100vh - 60px); /* Adjust height to fit viewport, subtracting space for other elements */
+        }
+
+        .footer-container {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff; /* Background color for better readability */
+            box-shadow: 0 -1px 5px rgba(0,0,0,0.1); /* Shadow for separation */
+            font-size: 14px;
+            color: #828282;
+        }
+
+        .footer-container a {
+            color: #2791e7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            iframe {
+                height: calc(100vh - 50px); /* Adjust for smaller screens */
+            }
+
+            .footer-container {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            iframe {
+                height: calc(100vh - 55px); /* Adjust for medium screens */
+            }
+
+            .footer-container {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://onecompiler.com/embed/html" title="HTML Compiler"></iframe>
+
+    <div class="footer-container">
+        Designed & Developed By |
+        <a href="https://linktr.ee/HUZAIF98" rel="dofollow">Momin Huzaif</a>
+    </div>
+</body>
+</html>
